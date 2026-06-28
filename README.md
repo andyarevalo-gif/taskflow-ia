@@ -1,60 +1,32 @@
-# 📋 TaskFlow IA
+# TaskFlow IA
 
-Aplicación web para la gestión de tareas desarrollada con **React** y **Vite**, creada como parte de la **Actividad 1 de la asignatura Generación de Código de Automatización en Desarrollo de Software con IA**.
+Aplicación web de gestión de tareas desarrollada con **React** y **Vite**, diseñada para facilitar la organización de actividades mediante una interfaz intuitiva y moderna. El proyecto fue desarrollado como parte de la asignatura **Generación de Código con Inteligencia Artificial** del Máster en Ingeniería de Software y Sistemas Informáticos.
 
-La aplicación permite organizar tareas mediante una interfaz moderna, intuitiva y responsive, implementando persistencia de datos con **LocalStorage** sin necesidad de un servidor o base de datos externa.
-
----
-
-## ✨ Funcionalidades
+## Características
 
 - Crear nuevas tareas.
 - Editar tareas existentes.
+- Marcar tareas como completadas o pendientes.
 - Eliminar tareas.
-- Marcar tareas como pendientes o completadas.
 - Buscar tareas por título.
-- Filtrar por estado.
-- Filtrar por prioridad.
-- Visualizar estadísticas generales de las tareas.
+- Filtrar tareas por estado y prioridad.
+- Visualizar estadísticas en tiempo real.
 - Persistencia de la información mediante LocalStorage.
 
----
-
-## 🛠 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - React
 - Vite
-- JavaScript (ES6+)
+- JavaScript (ES6)
 - CSS3
 - Lucide React
-- LocalStorage
 
----
-
-## 📁 Estructura del proyecto
-
-```text
-src/
-│
-├── assets/
-├── components/
-├── data/
-├── pages/
-├── services/
-├── styles/
-│
-├── App.jsx
-├── main.jsx
-```
-
----
-
-## 🚀 Instalación
+## Instalación
 
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/andyarevalo-git/taskflow-ia.git
+git clone https://github.com/andyarevalo-gif/taskflow-ia.git
 ```
 
 Ingresar al proyecto:
@@ -63,51 +35,72 @@ Ingresar al proyecto:
 cd taskflow-ia
 ```
 
-Instalar dependencias:
+Instalar las dependencias:
 
 ```bash
 npm install
 ```
 
----
-
-## ▶ Ejecutar la aplicación
+Ejecutar la aplicación:
 
 ```bash
 npm run dev
 ```
 
-Luego abrir el navegador en:
+La aplicación estará disponible en:
 
-```text
+```
 http://localhost:5173
 ```
 
 ---
 
-## 📌 Características del proyecto
+# Pruebas automatizadas
 
-- Arquitectura basada en componentes reutilizables.
-- Diseño responsive.
-- Gestión de estado mediante React Hooks.
-- Persistencia local mediante LocalStorage.
-- Interfaz desarrollada siguiendo principios de usabilidad y experiencia de usuario.
+Como parte de la Actividad 2 se implementó un entorno de pruebas automatizadas utilizando **Vitest** y **React Testing Library** para validar las funcionalidades principales de la aplicación.
+
+## Ejecutar las pruebas
+
+```bash
+npm test
+```
+
+## Generar el reporte de cobertura
+
+```bash
+npm run test:coverage
+```
+
+## Funcionalidades verificadas
+
+### Pruebas unitarias
+
+- Persistencia de tareas mediante LocalStorage.
+- Recuperación de tareas almacenadas.
+
+### Pruebas de integración e interfaz
+
+- Creación de tareas.
+- Edición de tareas.
+- Cambio de estado de tareas.
+- Eliminación de tareas.
+- Búsqueda de tareas.
+- Integración entre los principales componentes de la aplicación.
+
+## Cobertura
+
+Las pruebas implementadas alcanzan una cobertura superior al **90 %** en las principales métricas del proyecto (Statements, Branches, Functions y Lines), garantizando la validación de las funcionalidades críticas de la aplicación.
+
+## Repositorio
+
+https://github.com/andyarevalo-gif/taskflow-ia
+
+## Aplicación desplegada
+
+https://taskflow-ia-ten.vercel.app
 
 ---
 
-## 🔮 Mejoras futuras
+**Autor**
 
-- Integración con una API REST.
-- Autenticación de usuarios.
-- Base de datos en la nube.
-- Recordatorios y notificaciones.
-- Categorías y etiquetas para las tareas.
-- Sincronización entre dispositivos.
-
----
-
-## 👨‍💻 Autor
-
-**Andy Arévalo**
-
-Proyecto desarrollado como actividad académica del Máster en Ingeniería de Software y Sistemas Informáticos.
+Desarrollado por Andy Arévalo como parte de las actividades académicas del Máster en Ingeniería de Software y Sistemas Informáticos.
